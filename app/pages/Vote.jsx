@@ -12,12 +12,12 @@ class Vote extends Component {
   }
 
   pageTitle = () => {
-    return 'Vote | reactGo';
+    return 'Meg\'d | Urban Pick-Up Soccer';
   };
 
   pageMeta = () => {
     return [
-      { name: 'description', content: 'A reactGo example of a voting page' }
+      { name: 'description', content: 'Meg\'d Skeleton' }
     ];
   };
 
@@ -35,4 +35,3 @@ class Vote extends Component {
 }
 
 export default Vote;
-
