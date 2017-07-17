@@ -12,12 +12,12 @@ class LoginOrRegister extends Component {
   }
 
   pageTitle = () => {
-    return 'LoginOrRegister | reactGo';
+    return 'LoginOrRegister | Meg\'d';
   };
 
   pageMeta = () => {
     return [
-      { name: 'description', content: 'A reactGo example of a login or register page' }
+      { name: 'description', content: 'Urban Pick-Up Soccer Community' }
     ];
   };
 

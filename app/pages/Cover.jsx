@@ -17,7 +17,7 @@ class Cover extends Component {
 
   pageMeta = () => {
     return [
-      { name: 'description', content: 'A reactGo example of a dashboard page' }
+      { name: 'description', content: 'Urban Pick-Up Soccer Community' }
     ];
   };
 
