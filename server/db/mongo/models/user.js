@@ -16,16 +16,24 @@ const UserSchema = new mongoose.Schema({
   email: { type: String, unique: true, lowercase: true },
   password: String,
   tokens: Array,
+  username: {type: String, unique: true},
   profile: {
     name: { type: String, default: '' },
     gender: { type: String, default: '' },
+    age: { type: Number, min: 18 },
     location: { type: String, default: '' },
-    website: { type: String, default: '' },
-    picture: { type: String, default: '' }
+    picture: { type: String, default: '' },
+    phone: {type: String, default:''},
+    reputation: {type: Number, default: 0},
+    favTeam:{type: String, default: ''},
+    favPosition:{type: String, default: ''},
   },
   resetPasswordToken: String,
   resetPasswordExpires: Date,
-  google: {}
+  google: {},
+  recentlyTexted: {type: Boolean},
+  friends: Array,
+  updated: { type: Date, default: Date.now },
 });
 
 function encryptPassword(next) {
