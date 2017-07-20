@@ -10,6 +10,32 @@
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
   </head>
   <body class="home-body">
+    <!-- <button class="btn btn-primary" data-toggle="modal" data-target=".bd-example-modal-lg">Large modal</button> -->
+
+<div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="card" style="width: auto;">
+        <img class="card-img-top img-fluid" src="assets/image/1-0.jpg" alt="Card image cap">
+        <div class="card-block">
+          <h4 class="card-title">Park Name</h4>
+          <p class="card-text">Available time </p>
+        </div>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item">Cras justo odio</li>
+          <li class="list-group-item">Dapibus ac facilisis in</li>
+          <li class="list-group-item">Vestibulum at eros</li>
+        </ul>
+        <div class="card-block">
+          <a href="#" class="card-link">Card link</a>
+          <a href="#" class="card-link">Another link</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
     <nav class="navbar navbar-toggleable-md navbar-inverse bg-inverse">
       <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -71,19 +97,35 @@
               </div>
             </div>
             <div class="row game">
-              <div class="col-4">
-                <img class="img-fluid" src="http://via.placeholder.com/150x150" alt="">
-              </div>
               <div class="col-8">
-                <h3>Upcoming Game</h3>
+                <h3 class="text-center">Upcoming Game</h3>
+                  <div class="row justify-content-between">
+                    <div class="col-6">
+                      Players Joined
+                    </div>
+                    <div class="col-6 text-right">
+                      1000
+                    </div>
+                  </div>
+              </div>
+              <div class="col-4">
+                <img class="img-fluid" src="http://via.placeholder.com/250x150" alt="">
               </div>
             </div>
             <div class="row game">
-              <div class="col-4">
-                <img class="img-fluid" src="http://via.placeholder.com/150x150" alt="">
-              </div>
               <div class="col-8">
-                <h3>Upcoming Game</h3>
+                <h3 class="text-center">Upcoming Game</h3>
+                  <div class="row justify-content-around socc">
+                    <div class="col-4">
+                      Players Joined
+                    </div>
+                    <div class="col-4 text-right">
+                      1000
+                    </div>
+                  </div>
+              </div>
+              <div class="col-4">
+                <img class="img-fluid" src="http://via.placeholder.com/250x150" alt="">
               </div>
             </div>
             <div class="row game">
@@ -95,42 +137,41 @@
               </div>
             </div>
           </div>
+            <div class="container-fluid" id="map">
 
-          <br>
-          <div class="container-fluid" id="map">
-
-          </div>
+            </div>
         </div>
         <div class="col-6" id="right">
           <div class="cointainer-fluid games">
           <h1 class="text-center">Create a Game</h1>
           <div class="row">
             <div class="col-lg-6">
-              <img class="img-fluid" src="http://via.placeholder.com/500x500" alt="">
-              <h5 class="park-title">Create Game</h5></img>
+              <img class="img-fluid rounded open-game" src="assets/image/field-1.jpg" alt="">
+                <button class="btn park-title" data-toggle="modal" data-target=".bd-example-modal-lg">Create Game</button>
+              </img>
             </div>
             <div class="col-lg-6">
-              <img class="img-fluid" src="http://via.placeholder.com/500x500" alt="">
-              <h5 class="park-title">Create Game</h5></img>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-lg-6">
-              <img class="img-fluid" src="http://via.placeholder.com/500x500" alt="">
-              <h5 class="park-title">Create Game</h5></img>
-            </div>
-            <div class="col-lg-6">
-              <img class="img-fluid" src="http://via.placeholder.com/500x500" alt="">
+              <img class="img-fluid rounded" src="assets/image/field.jpg" alt="">
               <h5 class="park-title">Create Game</h5></img>
             </div>
           </div>
           <div class="row">
             <div class="col-lg-6">
-              <img class="img-fluid" src="http://via.placeholder.com/500x500" alt="">
+              <img class="img-fluid rounded" src="assets/image/field-1.jpg" alt="">
               <h5 class="park-title">Create Game</h5></img>
             </div>
             <div class="col-lg-6">
-              <img class="img-fluid" src="http://via.placeholder.com/500x500" alt="">
+              <img class="img-fluid" src="assets/image/field-1.jpg" alt="">
+              <h5 class="park-title">Create Game</h5></img>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-6">
+              <img class="img-fluid" src="assets/image/field-1.jpg" alt="">
+              <h5 class="park-title">Create Game</h5></img>
+            </div>
+            <div class="col-lg-6">
+              <img class="img-fluid" src="assets/image/field-1.jpg" alt="">
               <h5 class="park-title">Create Game</h5></img>
             </div>
           </div>

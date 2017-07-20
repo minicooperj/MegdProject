@@ -95,7 +95,8 @@ nav{
 
 
 img{
-  padding-bottom: 10px;
+  padding-bottom: 5px;
+  height: inherit;
 }
 
 #left {
@@ -132,11 +133,12 @@ img{
 
 .park-title {
   color: #ffffff;
-   font-size: 2vw;
-   position: absolute;
-   top: 10%;
-   left: 50%;
-   transform: translate(-50%, -50%);
+  font-size: 2vw;
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  /*background: transparent; */
 }
 
 @media (min-width: 992px) {
@@ -152,7 +154,11 @@ img{
     font-size: 4vw;
   }
 }
-
+.justify-content-around,
+ .justify-content-between{
+  background: black;
+  color: #eee;
+}
 /*.home-body {
   background-image: url("../image/1-0.jpg");
   z-index: 999999;
