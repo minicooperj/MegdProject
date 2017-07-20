@@ -23,9 +23,11 @@ class LoginOrRegister extends Component {
     const password = ReactDOM.findDOMNode(this.refs.password).value;
 
     if (isLogin) {
-      manualLogin({ email, password });
+      manualLogin({email, password});
     } else {
-      signUp({ email, password });
+      const username = ReactDOM.findDOMNode(this.refs.username).value;
+      const phone = ReactDOM.findDOMNode(this.refs.phone).value;
+      signUp({ email, password, username, phone });
     }
   }
 
@@ -62,8 +64,8 @@ class LoginOrRegister extends Component {
 
   render() {
     const { isWaiting, message, isLogin } = this.props.user;
-
-    return (
+    if(isLogin){
+      return (
       <div
         className={cx('login', {
           waiting: isWaiting
@@ -108,7 +110,68 @@ class LoginOrRegister extends Component {
           </div>
         </div>
       </div>
-    );
+      );
+    } // end if (isLogin)
+
+  return (
+    <div
+      className={cx('login', {
+        waiting: isWaiting
+      })}
+    >
+      <div className={cx('container')}>
+        { this.renderHeader() }
+        <img className={cx('loading')} alt="loading" src={hourGlassSvg} />
+        <div className={cx('email-container')}>
+          <form onSubmit={this.handleOnSubmit}>
+            <input
+              className={cx('input')}
+              type="email"
+              ref="email"
+             placeholder="email"
+            />
+            <input
+              className={cx('input')}
+              type="password"
+             ref="password"
+              placeholder="password"
+            />
+            <input
+              className={cx('input')}
+              type="username"
+             ref="username"
+              placeholder="username"
+            />
+            <input
+              className={cx('input')}
+              type="phone"
+             ref="phone"
+              placeholder="phone"
+            />
+            <div className={cx('hint')}>
+              <div>Hint</div>
+              <div>email: example@ninja.com password: ninja</div>
+            </div>
+            <p
+              className={cx('message', {
+              'message-show': message && message.length > 0
+            })}>{message}</p>
+            <input
+              className={cx('button')}
+              type="submit"
+              value={isLogin ? 'Login' : 'Register'} />
+          </form>
+        </div>
+        <div className={cx('google-container')}>
+          <h1 className={cx('heading')}>Google Login Demo</h1>
+          <a
+            className={cx('button')}
+            href="/auth/google">Login with Google</a>
+        </div>
+      </div>
+    </div>
+
+  )
   }
 }
 
@@ -131,4 +194,3 @@ function mapStateToProps({user}) {
 // It does not modify the component class passed to it
 // Instead, it returns a new, connected component class, for you to use.
 export default connect(mapStateToProps, { manualLogin, signUp, toggleLoginMode })(LoginOrRegister);
-

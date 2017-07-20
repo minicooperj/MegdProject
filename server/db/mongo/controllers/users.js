@@ -35,10 +35,11 @@ export function logout(req, res) {
 export function signUp(req, res, next) {
   const user = new User({
     email: req.body.email,
-    password: req.body.password
+    password: req.body.password,
+    username: req.body.username,
+    'profile.phone': req.body.phone
   });
-
-  User.findOne({ email: req.body.email }, (findErr, existingUser) => {
+  User.findOne({$or:[{email: req.body.email},{username:req.body.username},{'profile.phone':req.body.phone}]}, (findErr, existingUser) => {
     if (existingUser) {
       return res.sendStatus(409);
     }
