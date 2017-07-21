@@ -16,7 +16,7 @@ const Scoreboard = ({topics}) => {
   });
   return (
     <div className={cx('scoreboard')}>
-      <h3 className={cx('header')}>Vote count</h3>
+      <h3 className={cx('header')}>Available Times Will Go here</h3>
       <ul className={cx('list')}>
         {topicListItems}
       </ul>
