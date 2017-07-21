@@ -10,19 +10,109 @@
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
   </head>
   <body class="home-body">
-    <!-- <button class="btn btn-primary" data-toggle="modal" data-target=".bd-example-modal-lg">Large modal</button> -->
+    <!-- <button class="btn btn-success" data-toggle="modal" data-target=".bd-example-modal-lg">Large modal</button> -->
 
 <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
   <div class="modal-dialog modal-lg">
     <div class="modal-content">
       <div class="card" style="width: auto;">
         <img class="card-img-top img-fluid" src="assets/image/1-0.jpg" alt="Card image cap">
+        <h2 class="card-title text-center modal-title">Park Name</h2>
         <div class="card-block">
-          <h4 class="card-title text-center">Park Name</h4>
-          <p class="card-text">Available time </p>
+          <section class="cd-horizontal-timeline">
+          <div class="container-fluid">
+            <div class="row justify-content-center">
+              <div class="col-12">
+            <div class="timeline">
+              <div class="events-wrapper">
+                <div class="events">
+                    <a href="#0" data-date="22/07/2017" class="selected">Jul 22</a>
+                    <a href="#0" data-date="23/07/2017">Jul 23</a>
+                    <a href="#0" data-date="24/07/2017">Jul 24</a>
+                    <a href="#0" data-date="25/07/2017">Jul 25</a>
+                    <a href="#0" data-date="26/07/2017">Jul 26</a>
+                    <a href="#0" data-date="27/07/2017">Jul 27</a>
+                    <a href="#0" data-date="28/07/2017">Jul 28</a>
+                    <a href="#0" data-date="29/07/2017">Jul 29</a>
+                    <!-- other dates here -->
+
+                  <span class="filling-line" aria-hidden="true"></span>
+                </div> <!-- .events -->
+              </div> <!-- .events-wrapper -->
+            </div> <!-- .timeline -->
+          </div>
+          </div>
+        </div>
+
+            <div class="events-content">
+              <ol class="remove">
+                <li class="selected" data-date="22/07/2017">
+                  <div class="row justify-content-center">
+                    <div class="btn-group btn-group-lg justify-content-around" role="group">
+                      <button type="button" class="btn btn-success time">11:00</button>
+                      <button type="button" class="btn btn-success time">12:00</button>
+                      <button type="button" class="btn btn-success time">1:00</button>
+                      <button type="button" class="btn btn-success time">2:00</button>
+                      <button type="button" class="btn btn-success time">3:00</button>
+                      <button type="button" class="btn btn-success time" disabled>4:00</button>
+                      <button type="button" class="btn btn-success time">5:00</button>
+                      <button type="button" class="btn btn-success time">6:00</button>
+                      <button type="button" class="btn btn-success time">7:00</button>
+                    </div>
+                  </div>
+                </li>
+                <li data-date="23/07/2017">
+                  <div class="row justify-content-center">
+                    <div class="btn-group btn-group-lg justify-content-around" role="group">
+                      <button type="button" class="btn btn-success time">11:00</button>
+                      <button type="button" class="btn btn-success time">12:00</button>
+                      <button type="button" class="btn btn-success time">1:00</button>
+                      <button type="button" class="btn btn-success time">2:00</button>
+                      <button type="button" class="btn btn-success time">3:00</button>
+                      <button type="button" class="btn btn-success time" disabled>4:00</button>
+                      <button type="button" class="btn btn-success time">5:00</button>
+                      <button type="button" class="btn btn-success time">6:00</button>
+                      <button type="button" class="btn btn-success time">7:00</button>
+                    </div>
+                  </div>
+                </li>
+                <li data-date="24/07/2017">
+                  <div class="row justify-content-center">
+                    <div class="btn-group btn-group-lg justify-content-around" role="group">
+                      <button type="button" class="btn btn-success time">11:00</button>
+                      <button type="button" class="btn btn-success time">12:00</button>
+                      <button type="button" class="btn btn-success time">1:00</button>
+                      <button type="button" class="btn btn-success time">2:00</button>
+                      <button type="button" class="btn btn-success time">3:00</button>
+                      <button type="button" class="btn btn-success time" disabled>4:00</button>
+                      <button type="button" class="btn btn-success time">5:00</button>
+                      <button type="button" class="btn btn-success time">6:00</button>
+                      <button type="button" class="btn btn-success time">7:00</button>
+                    </div>
+                  </div>
+                </li>
+                <li data-date="25/07/2017">
+                  <div class="row justify-content-center">
+                    <div class="btn-group btn-group-lg justify-content-around" role="group">
+                      <button type="button" class="btn btn-success time">11:00</button>
+                      <button type="button" class="btn btn-success time">12:00</button>
+                      <button type="button" class="btn btn-success time">1:00</button>
+                      <button type="button" class="btn btn-success time">2:00</button>
+                      <button type="button" class="btn btn-success time">3:00</button>
+                      <button type="button" class="btn btn-success time" disabled>4:00</button>
+                      <button type="button" class="btn btn-success time">5:00</button>
+                      <button type="button" class="btn btn-success time">6:00</button>
+                      <button type="button" class="btn btn-success time">7:00</button>
+                    </div>
+                  </div>
+                </li>
+                <!-- other descriptions here -->
+              </ol>
+            </div> <!-- .events-content -->
+          </section>
         </div>
         <ul class="list-group list-group-flush">
-          <li class="list-group-item">Cras justo odio</li>
+          <li class="list-group-item"></li>
           <li class="list-group-item">Dapibus ac facilisis in</li>
           <li class="list-group-item">Vestibulum at eros</li>
         </ul>
@@ -144,37 +234,6 @@
         <div class="col-6" id="right">
           <div class="cointainer-fluid games">
           <h1 class="text-center">Create a Game</h1>
-          <section class="cd-horizontal-timeline">
-	<div class="timeline">
-		<div class="events-wrapper">
-			<div class="events">
-					<a href="#0" data-date="16/01/2014" class="selected">16 Jan</a></li>
-					<a href="#0" data-date="28/02/2014">28 Feb</a></li>
-					<!-- other dates here -->
-
-				<span class="filling-line" aria-hidden="true"></span>
-			</div> <!-- .events -->
-		</div> <!-- .events-wrapper -->
-
-		<ul class="cd-timeline-navigation">
-			<a href="#0" class="prev inactive">Prev</a></li>
-			<a href="#0" class="next">Next</a></li>
-		</ul> <!-- .cd-timeline-navigation -->
-	</div> <!-- .timeline -->
-
-	<!-- <div class="events-content">
-		<ol>
-			<li class="selected" data-date="16/01/2014">
-			</li>
-
-			<li data-date="28/02/2014">
-				event description here -->
-			<!-- </li> -->
-
-			<!-- other descriptions here -->
-		<!-- </ol>
-	</div> <!-- .events-content -->
-</section>
           <div class="row">
             <div class="col-lg-6">
               <img class="img-fluid rounded open-game" src="assets/image/field-1.jpg" alt="">
