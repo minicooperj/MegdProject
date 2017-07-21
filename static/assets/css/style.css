@@ -148,7 +148,6 @@ img{
   top: 10%;
   left: 50%;
   transform: translate(-50%, -50%);
-  /*background: transparent; */
 }
 
 @media (min-width: 992px) {
@@ -206,7 +205,7 @@ Main Components
 -------------------------------- */
 .cd-horizontal-timeline {
   opacity: 0;
-  margin: 2em auto;
+  margin: 1em auto;
   -webkit-transition: opacity 0.2s;
   -moz-transition: opacity 0.2s;
   transition: opacity 0.2s;
@@ -230,20 +229,21 @@ Main Components
 .cd-horizontal-timeline .events-wrapper {
   position: relative;
   height: 100%;
-  margin: 0 40px;
+  margin: 0 0px;
   overflow: hidden;
 }
 .cd-horizontal-timeline .events-wrapper::after, .cd-horizontal-timeline .events-wrapper::before {
   /* these are used to create a shadow effect at the sides of the timeline */
-  content: '';
+  /*content: '';
   position: absolute;
   z-index: 2;
   top: 0;
   height: 100%;
-  width: 20px;
+  width: 20px;*/
 }
 .cd-horizontal-timeline .events-wrapper::before {
   left: 0;
+  margin: 0 0px !important;
   background-image: -webkit-linear-gradient( left , #f8f8f8, rgba(248, 248, 248, 0));
   background-image: linear-gradient(to right, #f8f8f8, rgba(248, 248, 248, 0));
 }
@@ -340,7 +340,7 @@ Main Components
 }
 @media only screen and (min-width: 1100px) {
   .cd-horizontal-timeline {
-    margin: 6em auto;
+    margin: 0em auto;
   }
   .cd-horizontal-timeline::before {
     /* never visible - this is used in jQuery to check the current MQ */
@@ -416,7 +416,7 @@ Main Components
 .cd-horizontal-timeline .events-content {
   position: relative;
   width: 100%;
-  margin: 2em 0;
+  margin: 0em 0;
   overflow: hidden;
   -webkit-transition: height 0.4s;
   -moz-transition: height 0.4s;
@@ -581,4 +581,31 @@ Main Components
     -o-transform: translateX(0%);
     transform: translateX(0%);
   }
+}
+
+.events {
+  width: 100% !important;
+  left: 50% !important;
+  transform: translateX(-50%) !important;
+}
+
+.remove {
+  list-style: none;
+}
+
+.time {
+  border: 1px solid #eee;
+}
+
+ol {
+  padding-left: 0px;
+}
+
+.modal-title {
+  color: yellow;
+  font-size: 2vw;
+  position: absolute;
+  top: 52%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
