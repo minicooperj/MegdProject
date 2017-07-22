@@ -1,4 +1,5 @@
 import React from 'react';
+import belle from 'belle';
 import PropTypes from 'prop-types';
 import classNames from 'classnames/bind';
 import Navigation from '../containers/Navigation';
