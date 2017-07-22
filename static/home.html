@@ -9,10 +9,10 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
   </head>
-  <body class="home-body">
+  <body class="home-body" data-component="HomeBody">
     <!-- <button class="btn btn-success" data-toggle="modal" data-target=".bd-example-modal-lg">Large modal</button> -->
 
-<div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+<div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true" data-component="modal">
   <div class="modal-dialog modal-lg">
     <div class="modal-content">
       <div class="card" style="width: auto;">
@@ -126,7 +126,7 @@
 </div>
 
 
-    <nav class="navbar navbar-toggleable-md navbar-inverse bg-inverse">
+    <nav class="navbar navbar-toggleable-md navbar-inverse bg-inverse" data-component="navbar">
       <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -153,9 +153,11 @@
 
     <div class="container-fluid" id="main-content">
       <div class="row">
-        <div class="col-6" id="left">
+
+ <!--Left Component-->
+        <div class="col-6" id="left" data-component="leftside">
           <div class="row">
-            <div class="col-12">
+            <div class="col-12" data-component="upcomingGames">
               <h1 class='text-center'>Upcoming Game</h1>
             </div>
           </div>
@@ -168,8 +170,8 @@
                 <table class="table table-sm table-inverse">
                   <tbody>
                     <tr>
-                      <td>Mark</td>
-                      <td>Otto</td>
+                      <td>John</td>
+                      <td>Johnson</td>
                     </tr>
                     <tr>
                       <td>Thornton</td>
@@ -202,37 +204,20 @@
                 <img class="img-fluid" src="http://via.placeholder.com/250x150" alt="">
               </div>
             </div>
-            <div class="row game">
-              <div class="col-8">
-                <h3 class="text-center">Upcoming Game</h3>
-                  <div class="row justify-content-around socc">
-                    <div class="col-4">
-                      Players Joined
-                    </div>
-                    <div class="col-4 text-right">
-                      1000
-                    </div>
-                  </div>
-              </div>
-              <div class="col-4">
-                <img class="img-fluid" src="http://via.placeholder.com/250x150" alt="">
-              </div>
-            </div>
-            <div class="row game">
-              <div class="col-4">
-                <img class="img-fluid" src="http://via.placeholder.com/150x150" alt="">
-              </div>
-              <div class="col-8">
-                <h3>Upcoming Game</h3>
-              </div>
-            </div>
           </div>
-            <div class="container-fluid" id="map">
+
+
+<!--Map Section-->
+            
+            <div class="container-fluid" id="map" data-component="parkmap">
 
             </div>
         </div>
-        <div class="col-6" id="right">
-          <div class="cointainer-fluid games">
+
+
+
+        <div class="col-6" id="right" data-component="rightside">
+          <div class="cointainer-fluid games" data-component="creategames">
           <h1 class="text-center">Create a Game</h1>
           <div class="row">
             <div class="col-lg-6">
