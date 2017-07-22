@@ -3,7 +3,7 @@
 
 .navigation {
   padding: 0 28px;
-  background-color: darkorange;
+  background-color: #cc623b;
 }
 
 .item {
@@ -18,9 +18,9 @@
 }
 
 .logo-image {
-  display:block;
-  width:25%;
-  background-color: darkorange;
+  display:inline;
+  width:15%;
+  background-color: #cc623b;
 }
 
 .active {

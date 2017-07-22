@@ -5,6 +5,7 @@
 
 import bcrypt from 'bcrypt-nodejs';
 import mongoose from 'mongoose';
+var Schema = mongoose.Schema
 
 // Other oauthtypes to be added
 
@@ -32,6 +33,7 @@ const UserSchema = new mongoose.Schema({
   resetPasswordExpires: Date,
   google: {},
   recentlyTexted: {type: Boolean},
+  events: [{type: Schema.Types.ObjectId, ref: 'Event'}],
   friends: Array,
   updated: { type: Date, default: Date.now },
 });

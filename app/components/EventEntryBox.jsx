@@ -14,11 +14,11 @@ const cx = classNames.bind(styles);
 const EventEntryBox = ({onEntryChange, onEntrySave, event}) => {
   return (
     <div className={cx('entrybox')}>
-      <h1 className={cx('header')}>Event Name Go Here</h1>
+      <h1 className={cx('header')}>Add your pick-up soccer event here <br/>(Form coming soon!) </h1>
       <EventTextInput
         className={cx('input')}
         value={event}
-        placeholder="Date Selector"
+        placeholder="Write your time and place here"
         onEntryChange={onEntryChange}
         onEntrySave={onEntrySave} />
     </div>

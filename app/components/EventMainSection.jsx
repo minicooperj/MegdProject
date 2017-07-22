@@ -21,7 +21,7 @@ const EventMainSection = ({ events, onIncrement, onDecrement, onDestroy }) => {
 
   return (
     <div className={cx('main-section')}>
-      <h3 className={cx('header')}>Created Events will go here</h3>
+      <h3 className={cx('header')}>Scheduled Pick-Up Games </h3>
       <ul className={cx('list')}>{eventItems}</ul>
     </div>
   );

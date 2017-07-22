@@ -38,11 +38,11 @@ class LoginOrRegister extends Component {
         <div className={cx('header')}>
           <h1 className={cx('heading')}>Login with Email</h1>
           <div className={cx('alternative')}>
-            Not what you want?
+            First Time Sign Up?
             <a
               className={cx('alternative-link')}
               onClick={toggleLoginMode}
-            >Register an Account</a>
+            > Register an Account</a>
           </div>
         </div>
       );
@@ -56,7 +56,7 @@ class LoginOrRegister extends Component {
           <a
             className={cx('alternative-link')}
             onClick={toggleLoginMode}
-          >Login</a>
+          > Login</a>
         </div>
       </div>
     );
@@ -90,7 +90,7 @@ class LoginOrRegister extends Component {
               />
               <div className={cx('hint')}>
                 <div>Hint</div>
-                <div>email: example@ninja.com password: ninja</div>
+                <div>email: example@megd.com password: megd</div>
               </div>
               <p
                 className={cx('message', {
@@ -102,12 +102,7 @@ class LoginOrRegister extends Component {
                 value={isLogin ? 'Login' : 'Register'} />
             </form>
           </div>
-          <div className={cx('google-container')}>
-            <h1 className={cx('heading')}>Google Login Demo</h1>
-            <a
-              className={cx('button')}
-              href="/auth/google">Login with Google</a>
-          </div>
+
         </div>
       </div>
       );
@@ -162,12 +157,7 @@ class LoginOrRegister extends Component {
               value={isLogin ? 'Login' : 'Register'} />
           </form>
         </div>
-        <div className={cx('google-container')}>
-          <h1 className={cx('heading')}>Google Login Demo</h1>
-          <a
-            className={cx('button')}
-            href="/auth/google">Login with Google</a>
-        </div>
+
       </div>
     </div>
 

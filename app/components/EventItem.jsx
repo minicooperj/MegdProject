@@ -19,12 +19,12 @@ const EventItem = ({ text, id, incrementCount, decrementCount, destroyEvent }) =
   return (
     <li className={cx('topic-item')} key={id}>
       <span className={cx('topic')}>{text}</span>
-      <button
+      {/* <button
         className={cx('button', 'increment')}
         onClick={onIncrement}>+</button>
       <button
         className={cx('button', 'decrement')}
-        onClick={onDecrement}>-</button>
+        onClick={onDecrement}>-</button> */}
       <button
         className={cx('button', 'destroy')}
         onClick={onDestroy}>{String.fromCharCode(215)}</button>

@@ -9,12 +9,12 @@ import Event from '../models/event';
 export function all(req, res) {
 
   let query = {
-    fromDate: {'$gte': fromDate},
-    toDate: { '$lt': toDate },
-    isFull: 0,
+    // fromDate: {'$gte': fromDate},
+    // toDate: { '$lt': toDate },
+    // isFull: 0,
 
   }
-  Event.find({query}).exec((err, events) => {
+  Event.find({}).exec((err, events) => {
     if (err) {
       console.log('Error in first query');
       return res.status(500).send('Something went wrong getting the data');

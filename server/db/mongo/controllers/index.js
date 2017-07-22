@@ -7,5 +7,5 @@ export { topics, users, events };
 export default {
   topics,
   users,
-  events
+  events,
 };

@@ -12,7 +12,7 @@ Event Schema
  */
 
 const EventSchema = new mongoose.Schema({
-  ownerUserId:{ type: String, unique: true, lowercase: true },
+  _ownerUserId:{ type: String, ref: 'User' },
   locationId: String,
   players: Array,
   dateTimeFrom: Date,
