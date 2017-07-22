@@ -9,9 +9,9 @@ import Event from '../models/event';
 export function all(req, res) {
 
   let query = {
-    fromDate: {'$gte': fromDate},
-    toDate: { '$lt': toDate },
-    isFull: 0,
+    // dateTimeFrom: {'$gte': dateTimeFrom},
+    // dateTimeTo: { '$lt': dateTimeTo },
+    // isFull: 0,
 
   }
   Event.find({query}).exec((err, events) => {
