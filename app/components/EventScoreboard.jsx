@@ -15,7 +15,7 @@ const EventScoreboard = ({events}) => {
   });
   return (
     <div className={cx('scoreboard')}>
-      <h3 className={cx('header')}>Available Times Will Go here</h3>
+      <h3 className={cx('header')}>Open Field Times coming soon</h3>
       <ul className={cx('list')}>
         {eventListItems}
       </ul>

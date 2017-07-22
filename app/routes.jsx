@@ -31,12 +31,12 @@ export default (store) => {
   };
   return (
     <Route path="/" component={App}>
-      <IndexRoute component={Vote} fetchData={fetchVoteData} />
+      <IndexRoute component={Event} fetchData={fetchEventData} />
       <Route path="login" component={LoginOrRegister} onEnter={redirectAuth} />
       <Route path="dashboard" component={Dashboard} onEnter={requireAuth} />
       <Route path="about" component={About} />
       <Route path="cover" component={Cover} />
-      <Route path="event" component={Event} />
+      <Route path="event" component={Event} fetchData={fetchEventData}/>
     </Route>
   );
 };

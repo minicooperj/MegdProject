@@ -46,7 +46,7 @@ export default class EventTextInput extends Component {
         onChange={this.onChange}
         onKeyDown={this.onKeyDown}
         value={value}
-        autoFocus />
+        autoFocus />        
     );
   }
 }

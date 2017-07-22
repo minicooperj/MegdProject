@@ -12,19 +12,23 @@ const cx = classNames.bind(styles);
 const About = () => {
   return (
     <div className={cx('about')}>
-      <h1 className={cx('header')}>About Ninja Ocean</h1>
+      <h1 className={cx('header')}>Meg'd - Urban Pick-up Soccer Community</h1>
       <div className={cx('description')}>
-        <p>Imagine an ocean of ninjas. Now think of it as a metaphor.<br />
-          Seriously, we love good tech. React, redux, scala, Haskell, machine learning, you name it!
+        <p>Meg'd was created to help people find a pick-up soccer game fast.
+          <br/>
+          Registered Users can log in and find / create pick-up soccer events anywhere.
         </p>
       </div>
       <div className={cx('contribute')}>
-        <p>Want to contribute? Help us out!
-          If you think the code on &nbsp;
-          <a target="_blank" rel="noopener noreferrer" href="https://github.com/choonkending/react-webpack-node">this repo</a>
-        &nbsp;could be improved, please create an issue&nbsp;
-          <a target="_blank" rel="noopener noreferrer" href="https://github.com/choonkending/react-webpack-node/issues">here</a>!
-        </p>
+        <p>RoadMap: </p>
+          <ul>
+              <li> Add Styles for responsiveness </li>
+              <li> Add geocoder functionality </li>
+              <li> Add advanced user and field profiles </li>
+              <li> Add schedule data and show available field time to users</li>
+
+          </ul>
+
       </div>
     </div>
   );

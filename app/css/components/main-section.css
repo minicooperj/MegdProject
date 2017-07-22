@@ -11,7 +11,7 @@
 .header {
   @apply --title;
   @apply --subHeading;
-  background: #ed193a;
+  background: #cc623b;
   color: #fff;
 }
 
@@ -19,4 +19,3 @@
   list-style: none;
   padding: 16px;
 }
-
