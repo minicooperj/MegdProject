@@ -19,7 +19,9 @@ const EventSchema = new mongoose.Schema({
   dateTimeTo: Date,
   playerCount: Number,
   playerLimit:Number,
-  isFull: Boolean
+  isFull: Boolean,
+  text: String,
+  id: String
 });
 
 
