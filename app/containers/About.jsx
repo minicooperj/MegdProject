@@ -26,6 +26,7 @@ const About = () => {
               <li> Add geocoder functionality </li>
               <li> Add advanced user and field profiles </li>
               <li> Add schedule data and show available field time to users</li>
+              <li> Mobile version</li>
 
           </ul>
 
